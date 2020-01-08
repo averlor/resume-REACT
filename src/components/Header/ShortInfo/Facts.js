@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Facts extends React.Component{
 
@@ -7,10 +8,11 @@ class Facts extends React.Component{
         this.facts = this.props.facts
 
         // slider 
-        this.state = {
-            slideIndex: 0
-        }
         this.currentSlide = this.currentSlide.bind(this)
+    }
+
+    state = {
+        slideIndex: 0
     }
 
     currentSlide(n) {
@@ -39,6 +41,10 @@ class Facts extends React.Component{
             </div>
         )
     }
+}
+
+Facts.propTypes = {
+    facts: PropTypes.array.isRequired
 }
 
 export default Facts

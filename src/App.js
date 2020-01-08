@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
 
@@ -23,6 +24,10 @@ class App extends React.Component{
       </div>
     )
   }
+}
+
+App.propTypes = {
+  user: PropTypes.object.isRequired
 }
 
 function mapStateToProps(state) {

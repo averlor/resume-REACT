@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Content extends React.Component{
 
     constructor(props) {
         super(props);
+
+        this.course = this.props.course
     }
 
     render() {
@@ -12,7 +15,7 @@ class Content extends React.Component{
                 <h3 className="title">Курсы и сайты</h3>
 
                 <ul className="pl-15">
-                    {this.props.course.map((cor, index)=>{
+                    {this.course.map((cor, index)=>{
                         return (
                             <li key={index} className="mt-5">{cor}</li>
                         )
@@ -21,6 +24,10 @@ class Content extends React.Component{
             </section>
         )
     }
+}
+
+Content.propTypes = {
+    course: PropTypes.array.isRequired
 }
 
 

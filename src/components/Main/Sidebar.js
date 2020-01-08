@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Sidebar extends React.Component{
 
@@ -6,10 +7,11 @@ class Sidebar extends React.Component{
         super(props);
 
         this.certificate = this.props.certificate;
-        this.state = {
-            slideIndex: 0
-        }
         this.currentSlide = this.currentSlide.bind(this)
+    }
+
+    state = {
+        slideIndex: 0
     }
 
     currentSlide(n) {
@@ -41,6 +43,11 @@ class Sidebar extends React.Component{
             </aside>
         )
     }
+}
+
+
+Sidebar.propTypes = {
+    certificate: PropTypes.array.isRequired
 }
 
 
