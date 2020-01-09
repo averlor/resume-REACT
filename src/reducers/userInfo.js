@@ -28,7 +28,7 @@ const initialState = {
         hobies: [
             {
                 title: 'Программирование',
-                description: 'мое главное увлечение. Получаю колосальное удовольствие при разработке. Это же так круто - из ничего создать что-то'
+                description: 'мое главное увлечение. Получаю удовольствие при разработке нового приложения. Это же так круто - из ничего создать что-то'
             },
             {
                 title: 'Книги',
@@ -40,11 +40,11 @@ const initialState = {
             },
             {
                 title: 'Спорт',
-                description: 'раньше часто участвовал в различных соревнования. Сейчас же люблю просто смотреть все, кроме футбола. Керлинг смотреть и то интереснее.'
+                description: 'до поступления в ВУЗ 5 лет профессионально занимался современным пятиборьем. Участвовал в соревнованиях в разных городах России. Сейчас же люблю просто смотреть все, кроме футбола. Керлинг смотреть и то интереснее.'
             },
             {
-                title: 'Религия\мифология',
-                description: 'сам не особо верю, но очень интересно читать или слушать документальные факты'
+                title: 'Религия/мифология',
+                description: 'к религии отношусь нейтрально. Люблю смотреть и читать документальные факты, посвященные мифологии'
             },
             {
                 title: 'Люди',
@@ -59,7 +59,7 @@ const initialState = {
                     'Особенности html5',
                     'Семантика',
                     'Доступность',
-                    'Шаблонизатор pug - <span class="old">давно не использовал. Следует освежить знания</span>'
+                    'Шаблонизатор pug - давно не использовал'
                 ]
             },
             {
@@ -81,7 +81,7 @@ const initialState = {
                     'Контекст, область видимости, замыкания, прототипы, ajax',
                     'Знание ООП',
                     'Изучаю react',
-                    'Пробовал Vue.js  -  <span class="old">в силу работы, вынужден был перейти обратно на ванильный js</span>'
+                    'Пробовал Vue.js - в силу работы, вынужден был перейти обратно на ванильный js'
                 ]
             },
             {
@@ -108,14 +108,14 @@ const initialState = {
                     'Умею гуглить',
                     'VSCode - редактор кода + куча плагинов',
                     'PyCharm',
-                    'Gulp  - <span class="old">последнее время очень редко. Стоит освежить в памяти</span>'
+                    'Gulp - последнее время очень редко'
                 ]
             },
             {
                 title: 'ОС',
                 description: [
-                    'Win10 - <span class="old">использую на работе</span>',
-                    'Ubuntu - <span class="old">для своих целей</span>'
+                    'Win10 - использую на работе',
+                    'Ubuntu - для своих целей'
                 ]
             },
             {
@@ -175,94 +175,10 @@ const initialState = {
                 ]
             }
         ],
-        project: [
-            {
-                title: '<a href="https://github.com/averlor/CRM">CRM: приложение по контролю финансов</a>',
-                type_app: 'приложение является учебным.',
-                description: 'Использовались: vue, view, components, router, vuex'
-            },
-            {
-                title: '<a href="https://github.com/averlor/cart_v2">Каталог + корзина</a>',
-                type_app: 'приложение является учебным.',
-                description: 'Использовались: vue, view, components, router, vuex'
-            },
-            {
-                title: '<a href="https://github.com/averlor/todo_v.2.0">ToDo</a>',
-                type_app: 'приложение является учебным.Имеется <a href="http://averlor-todo.surge.sh/" target="_blank">демо</a>',
-                description: 'Использовались: view, components, router, vuex'
-            },
-            {
-                title: '<a href="https://github.com/averlor/responsiveMenu">Адаптивное меню</a>',
-                type_app: 'приложение является тестовым заданием. Имеется <a href="img/project/menu-full.png" target="_blank">демо</a>, <a href="img/project/menu-mob-1.png" target="_blank">демо</a> и <a href="img/project/menu-mob-2.png" target="_blank">демо</a>',
-                description: 'Использовались: html,css,js'
-            },
-            {
-                title: '<a href="https://github.com/averlor/landing_teamlead/">Potencialex</a>',
-                type_app: 'приложение является тестовым. Все ресурсы по проектам выдавались компание. Имеется <a href="img/project/potencialex.png" target="_blank">демо</a>',
-                description: 'Использовались: html,css,js,gulp,pug'
-            },
-            {
-                title: '<a href="https://github.com/averlor/landing/" target="_blank">СамСебеСантехник</a>',
-                type_app: 'приложение является тестовым. На разработку дали 30минут. Имеется <a href="img/project/yourself.png" target="_blank">демо</a>',
-                description: '>Использовались: html,css,js'
-            },
-            {
-                title: 'Дипломная работа',
-                type_app: 'приложение является учебным. Имеется <a href="img/project/maket_sigIn.png" target="_blank">демо</a>',
-                description: 'К сожалению, умений не хватило реализовать все, что придумал. А выкатывать прототип - не имеет смысла. Проект будет дорабатываться'
-            },
-            {
-                title: 'Мои пробы в дизайне',
-                type_app: 'заказчик отказался от макетов',
-                description: 'Имеется <a href="img/project/version_2.jpg" target="_blank">демо</a> и <a href="img/project/mobile-version.jpg" target="_blank">демо</a>'
-            }
-        ],
-        expirience: [
-            {
-                type: 'official', 
-                year: '2019-2020',
-                description: [
-                    '</span> Разработчик веб-интерфейсов в <a href="https://nicedo.ru/" target="_blank">NiceDo</a>.<br /><span class="old">Стаж: 6 месяцев</span>'
-                ]
-            },
-            {
-                type: 'no-official', 
-                year: '2015',
-                description: [
-                    'Контент-менеджер в РМЭС.<br/><span class="old">Стаж: 3 месяцев</span>'
-                ]
-            },
-            {
-                type: 'no-official', 
-                year: '2016',
-                description: [
-                    'Стажировка в ОАО "ДеСот"<br/><span class="old">Стаж: 1 месяцев</span>',
-                    'Участие в Хакатоне от МТС',
-                    'Первые пробы в фрилансе'
-                ]
-            },
-            {
-                type: 'no-official', 
-                year: '2017',
-                description: [
-                    'Стажировка в ОАО "ДеСот"<br/><span class="old">Стаж: 1 месяцев</span>',
-                    'Участие в Хакатоне в Санкт-Петербурге'
-                ]
-            },
-            {
-                type: 'no-official', 
-                year: '2018',
-                description: [
-                    'Стажировка в ОАО "ДеСот"<br/><span class="old">Стаж: 1 месяц</span>',
-                    'Стажировка в Wilix<br/><span class="old">Стаж: 2 месяца</span>',
-                    'Хакатон от "Центр-Инвест"',
-                    'Участие в Moscow Python Conf++'
-                ]
-            }
-        ],
         future: [
             {
                 title: 'В течение года',
+                role:'one',
                 description: [
                     'Изучить webpack',
                     'Изучить docker',
@@ -273,6 +189,7 @@ const initialState = {
             },
             {
                 title: 'В течение 5 лет',
+                role:'five',
                 description: [
                     'Машинное обучение + компьютерное зрение',
                     'Нейронные сети',
