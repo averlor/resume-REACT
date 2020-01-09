@@ -3,6 +3,15 @@ import React from 'react';
 import TabBar from './TabBar';
 import TabBarItem from './TabBarItem';
 
+import MenuFull from '../../../img/project/menu-full.png';
+import MenuMob1 from '../../../img/project/menu-mob-1.png';
+import MenuMob2 from '../../../img/project/menu-mob-2.png';
+import Potencialex from '../../../img/project/potencialex.png';
+import Yoursels from '../../../img/project/yourself.png';
+import Diplom from '../../../img/project/maket_sigIn.png';
+import Full from '../../../img/project/version_2.jpg';
+import Mob from '../../../img/project/mobile-version.jpg'
+
 
 class Info extends React.Component{
 
@@ -149,7 +158,7 @@ class Info extends React.Component{
                                         <a href="https://github.com/averlor/responsiveMenu">Адаптивное меню</a>
                                     </h3>
 
-                                    <span className="old">приложение является тестовым заданием. Имеется <a href="img/project/menu-full.png" target="_blank">демо</a>, <a href="img/project/menu-mob-1.png" target="_blank">демо</a> и <a href="img/project/menu-mob-2.png" target="_blank">демо</a></span>
+                                    <span className="old">приложение является тестовым заданием. Имеется <a href={MenuFull} target="_blank">демо</a>, <a href={MenuMob1} target="_blank">демо</a> и <a href={MenuMob2} target="_blank">демо</a></span>
                                     <div>
                                         <p>Использовались: html,css,js</p>
                                     </div>
@@ -160,7 +169,7 @@ class Info extends React.Component{
                                         <a href="https://github.com/averlor/landing_teamlead/">Potencialex</a>
                                     </h3>
 
-                                    <span className="old">приложение является тестовым. Все ресурсы по проектам выдавались компание. Имеется <a href="img/project/potencialex.png" target="_blank">демо</a></span>
+                                    <span className="old">приложение является тестовым. Все ресурсы по проектам выдавались компание. Имеется <a href={Potencialex} target="_blank">демо</a></span>
                                     <div>
                                         <p>Использовались: html,css,js,gulp,pug</p>
                                     </div>
@@ -171,7 +180,7 @@ class Info extends React.Component{
                                         <a href="https://github.com/averlor/landing/" target="_blank">СамСебеСантехник</a>
                                     </h3>
 
-                                    <span className="old">приложение является тестовым. На разработку дали 30минут. Имеется <a href="img/project/yourself.png" target="_blank">демо</a></span>
+                                    <span className="old">приложение является тестовым. На разработку дали 30минут. Имеется <a href={Yoursels} target="_blank">демо</a></span>
                                     <div>
                                         <p>Использовались: html,css,js</p>
                                     </div>
@@ -182,7 +191,7 @@ class Info extends React.Component{
                                         Дипломная работа
                                     </h3>
 
-                                    <span className="old">приложение является учебным. Имеется <a href="img/project/maket_sigIn.png" target="_blank">демо</a></span>
+                                    <span className="old">приложение является учебным. Имеется <a href={Diplom} target="_blank">демо</a></span>
                                     <div>
                                         <p>К сожалению, умений не хватило реализовать все, что придумал. А выкатывать прототип - не имеет смысла. Проект будет дорабатываться</p>
                                     </div>
@@ -195,7 +204,7 @@ class Info extends React.Component{
 
                                     <span className="old">заказчик отказался от макетов</span>
                                     <div>
-                                        <p>Имеется <a href="img/project/version_2.jpg" target="_blank">демо</a> и <a href="img/project/mobile-version.jpg" target="_blank">демо</a></p>
+                                        <p>Имеется <a href={Full} target="_blank">демо</a> и <a href={Mob} target="_blank">демо</a></p>
                                     </div>
                                 </div>
                             </div>
