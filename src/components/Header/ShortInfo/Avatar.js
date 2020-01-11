@@ -1,22 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Avatar extends React.Component{
-
-    constructor(props) {
-        super(props);
-
-        this.avatar = this.props.avatar
-        this.alt = this.props.alt
-    }
-
-    render() {
-        return (
-            <div className="photos">
-                <img className="avatar" src={this.avatar} alt={this.alt} />
-            </div>
-        )
-    }
+const Avatar = ({ avatar, alt }) => {
+    
+    return (
+        <div className="photos">
+            <img className="avatar" src={avatar} alt={alt} />
+        </div>
+    )
 }
 
 Avatar.propTypes = {

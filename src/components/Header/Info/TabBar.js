@@ -62,12 +62,6 @@ class TabBar extends React.Component {
         const {activeTab} = this.state;
         const {children, className, vertical, ...attrs} = this.props;
 
-        const classes = classNames(
-            'tab-bar',
-            className,
-            {vertical}
-        )
-
         return(
             <div id="tabs" {...attrs}>
                 <div className="tab-bar-nav">

@@ -6,32 +6,26 @@ import Facts from './Facts';
 
 const Avatar = React.lazy(()=> import('./Avatar'))
 
-class ShortInfo extends React.Component{
-    
-    constructor(props) {
-        super(props);
-    }
+const ShortInfo = ({avatar, alt, facts}) => {
 
-    render() {
-        return (
-            <section className="header__short-info">
-                <React.Suspense fallback={<p>Loading..</p>}>
-                    <Avatar
-                        avatar={this.props.avatar}
-                        alt={this.props.alt}
-                    />
-                </React.Suspense>
+    return (
+        <section className="header__short-info">
+            <React.Suspense fallback={<p>Loading..</p>}>
+                <Avatar
+                    avatar={avatar}
+                    alt={alt}
+                />
+            </React.Suspense>
 
-                <Facts facts={this.props.facts}/>
-            </section>
-        )
-    }
+            <Facts facts={facts}/>
+        </section>
+    );
 }
 
 ShortInfo.propTypes = {
     avatar: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
-    facts: PropTypes.array.isRequired
+    facts: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default ShortInfo

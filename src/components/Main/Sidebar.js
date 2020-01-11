@@ -26,7 +26,7 @@ class Sidebar extends React.Component{
                 <div className="certificate">
                     <div className="slider">
                         <div className="slider__mySlide fade">
-                            <a href={this.certificate[this.state.slideIndex]} target="_blank">
+                            <a href={this.certificate[this.state.slideIndex]} target="_blank" rel="noopener noreferrer">
                                 <img className="certificate__img" src={this.certificate[this.state.slideIndex]} alt={this.certificate[this.state.slideIndex]}/>
                             </a>
                         </div>
@@ -47,7 +47,7 @@ class Sidebar extends React.Component{
 
 
 Sidebar.propTypes = {
-    certificate: PropTypes.array.isRequired
+    certificate: PropTypes.arrayOf(PropTypes.string)
 }
 
 
