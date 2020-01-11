@@ -4,29 +4,21 @@ import PropTypes from 'prop-types';
 import Info from './Info/Info';
 import ShortInfo from './ShortInfo/ShortInfo';
 
-class Header extends React.Component{
+const Header = ({user}) => {
 
-    constructor(props) {
-        super(props);
+    const {avatar, familyName, name, facts} = user;
+    const alt = familyName + ' ' + name;
 
-        this.avatar = this.props.user.avatar
-        this.alt = `${this.props.user.familyName} ${this.props.user.name}`
-        this.facts = this.props.user.facts
-        this.user = this.props.user
-    }
-
-    render() {
-        return (
-            <header id="header">
-                <Info user={this.user}/>
-                <ShortInfo
-                    avatar={this.avatar}
-                    alt={this.alt}
-                    facts={this.facts}
-                />
-            </header>
-        )
-    }
+    return (
+        <header id="header">
+            <Info user={user}/>
+            <ShortInfo
+                avatar={avatar}
+                alt={alt}
+                facts={facts}
+            />
+        </header>
+    )
 }
 
 Header.propTypes = {

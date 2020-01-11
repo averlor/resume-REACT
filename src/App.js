@@ -8,22 +8,15 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer';
 
 
-class App extends React.Component{
+const App = ({user}) => {
 
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      // Имеет ли смысл обернуть все в context
-      <div className="row">
-        <Header user={this.props.user}/>
-        <Main user={this.props.user}/>
-        <Footer />
-      </div>
-    )
-  }
+  return (
+    <div className="row">
+      <Header user={user}/>
+      <Main user={user}/>
+      <Footer />
+    </div>
+  )
 }
 
 App.propTypes = {
